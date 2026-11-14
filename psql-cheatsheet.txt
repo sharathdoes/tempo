@@ -1,0 +1,16 @@
+compare dates (time stamp types ) - starttime::date >=date('2012-01-01') and starttime::date <=('2012-12-31')
+extract month from time stamp - EXTRACT(MONTH FROM starttime) as month
+
+
+order 
+FROM – Identify the tables.
+JOIN – Combine tables.
+WHERE – Filter individual rows.
+GROUP BY – Create groups.
+HAVING – Filter groups.
+SELECT – Calculate columns and assign aliases.
+ORDER BY – Sort the result.
+
+
+to string - select  length(zipcode::text) from cd.members
+substring - select substr (mems.surname,1,1) as letter, count(*) as count from cd.members mems group by letter
